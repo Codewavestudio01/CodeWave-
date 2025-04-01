@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - CodeWave Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+       .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #111;
+            padding: 15px;
+            position: relative;
+        }
+        .navbar img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .navbar h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .navbar .logo-white {
+            color: white;
+        }
+        .navbar .logo-red {
+            color: red;
+        }
+          .navbar-right {
+            margin-left: auto;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 18px;
+            color: #fff;
+            transition: 0.3s;
+        }
+        .question:hover {
+            text-decoration: underline;
+        }
+        .answer {
+            display: none;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #00ff00;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+        }
+        .back-button:hover {
+            background-color: #cc0000;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #aaa;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+     <div class="navbar">
+        <div class="navbar-left">
+            <img src="logo.png" alt="Logo">
+               <h1><span class="logo-white">CodeWave</span> <span class="logo-red">Studio</span></h1>
+        </div>
+        <div class="navbar-right">
+            <a href="/index.html" class="back-button">Home</a>
+        </div>
+    </div>
+    </div><div class="faq-container">
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    
+    <div style="height: 20px;"></div> <!-- Added space between heading and first question -->
+    
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('faq1')">1. What is CodeWave Studio, and what services do you offer?</div>
+        <div class="answer" id="faq1">CodeWave Studio is a professional web & graphic design agency that provides website development, graphic design, eBook publishing, affiliate marketing setup, and eCommerce solutions.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('faq2')">2. Do you design custom websites?</div>
+        <div class="answer" id="faq2">Yes, we create custom websites tailored to clients' specific needs. We develop websites using WordPress, Wix Studio, Odoo, JavaScript, CSS, HTML, and Hostinger for a professional online presence.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('faq3')">3. What does your graphic design service include?</div>
+        <div class="answer" id="faq3">We offer logo design, business cards, social media graphics, branding kits, banners, posters, and UI/UX design, ensuring a professional look for your brand.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('faq4')">4. What is your process for eBook writing and publishing?</div>
+        <div class="answer" id="faq4">We handle eBook writing, formatting, cover design, proofreading, and publishing on platforms like Play Store and Amazon, making it easy for you to publish and promote your book.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('faq5')">5. How can I place an order for my website or design project?</div>
+        <div class="answer" id="faq5">You can visit our website and fill out the inquiry form or contact us directly via WhatsApp or email. We will respond within 24 hours.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer('faq6')">6. What payment methods do you accept?</div>
+        <div class="answer" id="faq6">We accept UPI, bank transfers, and digital wallets. Payment details will be shared after project confirmation.</div>
+    </div>
+    
+    <a href="/index.html" class="back-button">Back</a>
+</div>
+
+<div class="footer">
+    &copy; 2025 CodeWave Studio. All Rights Reserved.
+</div>
+
+</body>
+</html>
